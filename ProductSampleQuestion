@@ -1,0 +1,61 @@
+-----------------------PRODUCT CART MANAGEMENT------------------------
+
+DEVELOP AN APPLICATION FOR product cart management system. ALL OPERATION SHOULD INTERACT WITH DATABASE AND THE BASIC REQUOREMENT OF THE APPLICATION WILL BE:
+
+-Create Product(Send Product JSON Object via POSTMAN using POST request)
+-Update Product(Send Product JSON Object via POSTMAN using PUT request)
+-Delete Product(Send ProductID using PathVariable via POSTMAN using DELETE request)
+-View Products(List all products via POSTMAN using GET request)
+-Find Product(Find the products object for the given ProductID)
+
+-----------------------------------------------------------------------
+
+Following are the screenShots and descriptions related to the requirement of an application.
+VIEW PRODUCTS:
+On Executing the application, when you provide the below REST API call, it should list out all products details from database.
+
+-------------------------------------------------------------------------
+
+Marks Distribution:(30M)
+-Correct Controller class method signature to map client request(10)
+-Correct service and DAO layer method signatures(5)
+-Correct JPA logic written in DAO Layer to get all products(5)
+-Display all the products retrieved from database.(10)
+
+-------------------------------------------------------------------------
+
+To update a product send PUT request from POSTMAN add JSON object to request body,header,application/json
+UPDATE PRODUCTS-
+For Example-Update a product for a given product id.
+localhost:8080/products/s01
+
+-------------------------------------------------------------------------
+
+Marks Distribution:(25M)
+-Display all the product details after sending Get Request from POSTMAN(8)
+-Send PUT,DELETE,POST requests from POSTMAN(7)
+-Use POSTMAN as Client to do CRUD operations on your repository from app(5)
+-Application architecture Spring boot, Rest, and MVC.(5)
+
+-------------------------------------------------------------------------
+
+Table Script:
+-CREATE TABLE productid VARCHAR(20) PRIMARY KEY name VARCHAR(20) model VARCHAR(20) price NUMBER
+-INSERT INTO product VALUES("IO1","IPHONE",'6S',45000)
+-INSERT INTO
+-INSERT INTO
+-COMMIT
+Note: Participants are kindly requested to follow the same table structure.
+
+-------------------------------------------------------------------------
+
+Application Architecture:(15M)
+-Package Structure according to coding standard(5)
+-Exception Handling(5)
+-Following Naming convention/coding Standards(5)
+
+-------------------------------------------------------------------------
+
+PostMan --> Spring Controller(Product COntroller)  --> Service Layer(ProductService, ProductServiceImpl) --> DAO Layer(ProductDAO, ProductDAoImpl) --> Database
+
+-------------------------------------------------------------------------
